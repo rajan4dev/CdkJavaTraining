@@ -9,7 +9,8 @@ import java.util.*;
  */
 public class CarCatalogTest {
     public static List<Car> createTestCarCatalog(){
-        List<Car> carList = Arrays.asList(new Car(1, 300000, "BMW"),
+//        List<Car> carList = Arrays.asList(new Car(1, 300000, "BMW"),
+        Set<Car> carSet = new HashSet<>(Arrays.asList(new Car(1, 300000, "BMW"),
                 new Car(2, 630000, "BMW"),
                 new Car(3, 54000, "Audi"),
                 new Car(14, 300000, "BMW"),
@@ -31,10 +32,26 @@ public class CarCatalogTest {
                 new Car(20, 304300, "BMW"),
                 new Car(21, 23400, "Bentley"),
                 new Car(22, 123300, "Audi"),
-                new Car(13, 3230023, "BMW"));
+                new Car(13, 3230023, "BMW")));
+
+
+        List<Car> carList = new ArrayList<Car>(carSet);
         return carList;
     }
 
+    @Test
+    public void testNaturalSorting() {
+        System.out.println("Sorted using NaturalSorting (Price)");
+        List<Car> carCatalog = CarCatalogTest.createTestCarCatalog();
+
+        Collections.sort(carCatalog);
+        Iterator itr  = carCatalog.iterator();
+        while(itr.hasNext()){
+            Car car = (Car)itr.next();
+            System.out.println(car.toString());
+        }
+        System.out.println("========================================================");
+    }
     @Test
     public void testPriceComparator() {
         System.out.println("Sorted Using Price");
@@ -75,6 +92,9 @@ public class CarCatalogTest {
         }
         System.out.println("========================================================");
     }
+
+
+
 
 
 }

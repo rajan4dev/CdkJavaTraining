@@ -3,7 +3,7 @@ package assignment5;
 /**
  * Created by bhirudr on 7/26/2017.
  */
-public class Car {
+public class Car implements Comparable<Car>{
     private int id;
     private int price;
     private String brand;
@@ -48,4 +48,13 @@ public class Car {
         this.brand = brand;
     }
 
+    @Override
+    public int compareTo(Car car) {
+        if(this.getPrice() == car.getPrice())
+            return 0;
+        else if(this.getPrice() > car.getPrice()){
+            return -1;
+        }
+        return 1;
+    }
 }
