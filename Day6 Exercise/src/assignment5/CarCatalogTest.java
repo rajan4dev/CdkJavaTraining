@@ -9,7 +9,6 @@ import java.util.*;
  */
 public class CarCatalogTest {
     public static List<Car> createTestCarCatalog(){
-//        List<Car> carList = Arrays.asList(new Car(1, 300000, "BMW"),
         Set<Car> carSet = new HashSet<>(Arrays.asList(new Car(1, 300000, "BMW"),
                 new Car(2, 630000, "BMW"),
                 new Car(3, 54000, "Audi"),
