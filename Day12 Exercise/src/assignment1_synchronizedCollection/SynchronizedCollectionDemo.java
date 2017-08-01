@@ -13,8 +13,6 @@ import java.util.concurrent.TimeUnit;
  * Created by bhirudr on 8/1/2017.
  */
 public class SynchronizedCollectionDemo {
-
-
     @Test
     public void testSynchronizedCollection() {
 
@@ -23,13 +21,10 @@ public class SynchronizedCollectionDemo {
 
         BlockingQueue<Integer> integerBlockingQueue = new LinkedBlockingQueue<>();
 
-
         Thread thread1 = new Thread(() -> {
-            for (int i = 0; i < 200000000; i++) {
+            while(true) {
                 try {
-                    System.out.println("Putting" + i + "th Random Integer");
-                    integerBlockingQueue.put((int) (Math.random()*10000));
-
+                    integerBlockingQueue.put((int) (Math.random() * 10000));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -38,13 +33,13 @@ public class SynchronizedCollectionDemo {
 
 
         Thread thread2 = new Thread(() -> {
-           while(true){
-               try {
-                   System.out.println("Displaying the contents " + integerBlockingQueue.take());
-               } catch (InterruptedException e) {
-                   e.printStackTrace();
-               }
-           }
+            while (true) {
+                try {
+                    System.out.println("Consumed Random Number: " + integerBlockingQueue.take());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         });
         thread1.start();
         thread2.start();

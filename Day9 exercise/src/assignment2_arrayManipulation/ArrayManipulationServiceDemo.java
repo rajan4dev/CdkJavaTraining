@@ -46,6 +46,14 @@ public class ArrayManipulationServiceDemo {
     }
 
     @Test
+    public void testFold() {
+        int[] numberArray = {2, 4, 6, 7};
+        ArrayManipulationService arrayManipulationService = new ArrayManipulationService(numberArray);
+        arrayManipulationService.fold();
+    }
+
+
+    @Test
     public void testDoOperation() {
         int[] numberArray = {2, 4, 6, 7};
         ArrayManipulationService arrayManipulationService = new ArrayManipulationService(numberArray);
