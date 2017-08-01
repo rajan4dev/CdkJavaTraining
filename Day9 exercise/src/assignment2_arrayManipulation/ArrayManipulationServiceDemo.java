@@ -22,7 +22,28 @@ public class ArrayManipulationServiceDemo {
             System.out.println("multiplying each element by 2 , Result: "+(arrayElement*2));
         });
     }
+    @Test
+    public void testModify() {
+        int[] numberArray = {2, 4, 6, 7};
+        ArrayManipulationService arrayManipulationService = new ArrayManipulationService(numberArray);
+        arrayManipulationService.modify((Integer arrayElement) -> {
+            System.out.println("sqrt of "+ arrayElement+" is "+(int)Math.sqrt(arrayElement));
+           return (int)Math.sqrt(arrayElement);
+        });
+    }
 
+    @Test
+    public void testDelete() {
+        int[] numberArray = {2, 4, 6, 7};
+        ArrayManipulationService arrayManipulationService = new ArrayManipulationService(numberArray);
+        arrayManipulationService.delete(val1-> val1>3);
+
+        ArrayManipulationService arrayManipulationService1 = new ArrayManipulationService(numberArray);
+        arrayManipulationService.forEach((Integer arrayElement) -> {
+            System.out.println(" " + arrayElement);
+        });
+
+    }
 
     @Test
     public void testDoOperation() {
@@ -58,6 +79,7 @@ public class ArrayManipulationServiceDemo {
             }
 
         });
+
 
     }
 
