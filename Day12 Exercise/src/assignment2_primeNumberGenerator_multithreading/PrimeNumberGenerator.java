@@ -8,12 +8,12 @@ import java.util.concurrent.*;
 public class PrimeNumberGenerator {
     public PrimeNumberGenerator() {
         // Thread thread = new Thread();
-        ExecutorService executor = Executors.newFixedThreadPool(5);
-        Future<Integer> future1 = executor.submit(new sumOfPrimeNumbers(1, 100));
-        Future<Integer> future2 = executor.submit(new sumOfPrimeNumbers(101, 200));
-        Future<Integer> future3 = executor.submit(new sumOfPrimeNumbers(201, 300));
-        Future<Integer> future4 = executor.submit(new sumOfPrimeNumbers(301, 400));
-        Future<Integer> future5 = executor.submit(new sumOfPrimeNumbers(401, 500));
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        Future<Integer> future1 = executorService.submit(new sumOfPrimeNumbers(2, 100));
+        Future<Integer> future2 = executorService.submit(new sumOfPrimeNumbers(101, 200));
+        Future<Integer> future3 = executorService.submit(new sumOfPrimeNumbers(201, 300));
+        Future<Integer> future4 = executorService.submit(new sumOfPrimeNumbers(301, 400));
+        Future<Integer> future5 = executorService.submit(new sumOfPrimeNumbers(401, 500));
 
         try {
             TimeUnit.SECONDS.sleep(3);
@@ -51,7 +51,7 @@ class sumOfPrimeNumbers implements Callable {
         int sum = 0;
         for (int i = from; i <= to; i++) {
             boolean flag = false;
-            for (int j = 2; j < Math.sqrt(i); j++) {
+            for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
                     flag = true;
                 }
