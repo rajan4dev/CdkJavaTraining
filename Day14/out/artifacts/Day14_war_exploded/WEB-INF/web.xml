@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>A</servlet-name>
-        <servlet-class>com.cdk.web.DateTimeServlet</servlet-class>
+        <servlet-name>MatchResults</servlet-name>
+        <servlet-class>com.cdk.web.MatchResults</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>A</servlet-name>
-        <url-pattern>/datetimeservlet</url-pattern>
+        <servlet-name>MatchResults</servlet-name>
+        <url-pattern>/MatchResults</url-pattern>
     </servlet-mapping>
 </web-app>
