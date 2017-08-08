@@ -6,6 +6,9 @@ import java.io.Serializable;
 
 @XmlRootElement(name = "mycar")
 public class Car {
+
+
+    //while creating object of car from json, firstly empty car will be created
     public Car() {
     }
 
