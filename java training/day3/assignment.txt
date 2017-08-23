@@ -1,0 +1,40 @@
+1) Create a class Vechicle which will have 3 methods
+and some properties along with 2 constructors 
+
+properties :
+	vin - int
+	name - String 
+	speed - int
+methods :
+		
+1)  details -- will show details of the vehicle
+2)  drive -- will be implemented later
+3)  inspect --- will be implemented later
+
+Create 2 child classes Bike and Car which will extend Vehicle and 
+will implement all the above given methods
+
+Create a main class called  Mechanic also which will be used to test 
+all vehicles
+
+2) Create a Java Application which will have minumum 4 classes
+ based banking domain;
+
+ Things to consider while writing code 
+  
+ Suggested class names
+  AccountService,CustomerService,Account,Customer,BranchService,
+  BankService,Main  
+ 
+ 1) package to be created
+ 2) package names to be meaningful
+ 3) atleast 3 level of packaging
+ 4) class will inherit from different packages
+ 5) main class will be in a indenendent package called "client"	
+    as last package name
+
+
+
+
+
+

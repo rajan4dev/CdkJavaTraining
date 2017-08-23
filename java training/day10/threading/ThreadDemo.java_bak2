@@ -1,0 +1,36 @@
+class ThreadDemo {
+		
+	public static void main(String[] args){	
+		Hello hello  = new Hello();
+		Hi hi  = new Hi();
+		hello.sayHello();
+		hi.sayHi();
+		System.out.println("Done");
+		System.out.println("Done");
+		System.out.println("Done");
+		System.out.println("Done");
+	}
+
+
+}
+
+class Hello{
+
+	public void sayHello(){
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+	}
+}
+
+class Hi{
+
+	public void sayHi(){
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+	}
+
+}

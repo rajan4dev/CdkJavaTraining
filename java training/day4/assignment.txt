@@ -1,0 +1,45 @@
+1) Write a java application for banking domain where banking 
+   functionalities will be designed in the form of interfaces
+   and implemented by classes.
+
+   possible interfaces to create
+	AccountService
+		open()
+		close()
+		withdraw()
+		deposit()
+		balance()
+
+	CustomerService
+		details()
+		updateAddress()
+		updateMobile()						
+	
+   possible classes to create and implement interfaces
+	AccountServiceImpl
+	CustomerServiceImpl
+  	Bank (main class)
+
+Note: interfaces and classes should exist in differen packages with 
+	meaningful package names.
+		
+
+2) Write a Java application for Employee management system where 
+   possible classes will be as follows
+
+   Employee
+	id - int
+	name - String
+	joiningMonth - Month (enum) - 12 months
+	joiningYear - Year (enum) - between 2015-2020
+		        
+   EmployeeService
+   Company
+	name - String
+	strength - int
+	city - City (enum) - some 4-5 cities only		
+   CompanyService
+   		
+
+
+	

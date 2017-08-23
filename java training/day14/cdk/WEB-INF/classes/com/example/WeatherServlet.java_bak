@@ -1,0 +1,29 @@
+package com.example;
+
+import java.io.*;
+import java.util.*;
+import javax.servlet.*;
+
+public class WeatherServlet extends GenericServlet {
+
+	Map<String,String> data = new HashMap<>();			
+
+	public void init()  throws ServletException {
+	
+		data.put("Pune","22"); 
+		data.put("Mumbai","28"); 
+		data.put("Delhi","42"); 
+		data.put("GOA","23"); 
+	}	
+
+	public void service(ServletRequest request,ServletResponse response) throws ServletException,IOException{
+
+		//System.out.printf("Request type is : %s%n",methodValue);
+
+		String cityName = request.getParameter("city");
+		
+		PrintWriter pw = response.getWriter();
+		pw.write("Weather of the city is : "+data.get(cityName)+" degree.");
+	}	
+
+}

@@ -1,0 +1,27 @@
+class ThreadDemo {
+		
+	public static void main(String[] args){	
+		ThreadDemo demo = new ThreadDemo();
+		demo.hello();
+		demo.hi();
+		System.out.println("Done");
+		System.out.println("Done");
+		System.out.println("Done");
+		System.out.println("Done");
+	}
+
+	public void hello(){
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+		 System.out.println("Hello");
+	}
+
+	public void hi(){
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+		 System.out.println("Hi");
+	}
+}
+

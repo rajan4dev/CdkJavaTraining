@@ -1,0 +1,12 @@
+class DataHolder<T> {
+	
+	T data;
+
+	public DataHolder(T data){
+		this.data = data;
+	}
+
+	public T getData(){
+		return this.data;
+	}
+}

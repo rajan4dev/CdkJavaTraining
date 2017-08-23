@@ -1,0 +1,6 @@
+Write an app using spring rest framework, which will expose rest api's for producing and consuming data from two/three/four tables(from banking schema) which is saved in DB.
+
+table: branch
+bankmaster
+accountmaster
+branchmaster

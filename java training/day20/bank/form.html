@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<form method=post action='rest/add'>
+		<label>ID : </label>
+		<input type=text value=100 name=id /><br/>
+		<label>Name : </label>
+		<input type=text value=Raj name=uname /><br/>
+		<label>Password : </label>
+		<input type=password value=secret name=upass /><br/>
+		<label>Age : </label>
+		<input type=number value=43 name=uage /><br/>
+		<label>DOB : </label>
+		<input type=date name=udob /><br/>
+		<label>TOB : </label>
+		<input type=time name=utob /><br/>
+		<label>Address : </label>
+		<textarea rows=5 cols=40>10,Janpath,New Delhi</textarea><br/>
+		<label>City : </label>
+		<select name=city>
+			<option value=''>--Select--</option>
+			<option value='Mumbai'>Mumbai</option>
+			<option value='Pune'>Pune</option>
+			<option value='Delhi'>Delhi</option>
+		</select><br/>
+		<label>Gender : </label>
+		<input type=radio name=ugender value=M />Male
+		<input type=radio name=ugender value=F />Female
+		<br/>
+		<label>Hobbies : </label>
+		<input type=checkbox name=hobby value=Sleeping />Sleeping
+		<input type=checkbox name=hobby value=Eating />Eating
+		<input type=checkbox name=hobby value=Chirping />Chirping
+		<br/>
+		<label>Weight(kg) : </label>
+		<input type=range name=weight value=90 />
+		<br/>
+		<input type=submit value=Register /> 
+
+	</form>
+</body>
+</html>

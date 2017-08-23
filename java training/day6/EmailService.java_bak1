@@ -1,0 +1,50 @@
+class EmailService{
+	
+	void sendEmail(String user,String email,String message){
+		if(checkLocation(retrieveLocation(email))){
+			if(checkPermission(user)){
+				if(exists(email)){
+					System.out.println("Email is sent to "+email+ " with message : "+message);
+				}
+			}
+		}
+	}	
+
+
+	String retrieveLocation(String email){
+		//20 loc to check with Webservice
+		if(email.endsWith("@yahoo.com")) {
+			return "USA";
+		}else{
+			return "Pakistan";
+		}
+	}
+
+	boolean exists(String email){
+		//20 loc to check in DB
+		if(email.endsWith("@yahoo.com")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	boolean checkPermission(String user){
+		//20 loc to check in DB
+		if(user.equals("admin")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	boolean checkLocation(String location){
+		//20 loc to check in DB
+		if(location.equals("USA")) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+}

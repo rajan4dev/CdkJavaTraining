@@ -1,0 +1,22 @@
+1) Write a program so that you can read 2 different files
+   concurrently and print result on console.
+
+
+2) Write a program using threads, one thread will increase the value 
+   of valiable i and other thread will diaplay this value.
+   
+   Do this exercise using 2 workers and 2 tasks namely 
+   ValueTask and PrintTask.
+	
+   And run the same program around 20 times and observe the result.
+
+3) Write a program using java 5 concurrent  APIs to run tasks and it 
+   is not known the size of tasks in advance so they may increase
+   or decrease also in future, accordingly you have to pick right
+   thread pool to use.
+   
+   Every task has to do the sum of 1-500 numbers and print.
+
+
+
+

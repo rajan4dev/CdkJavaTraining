@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Spring-Hibernate-RestServices:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_Hibernate_RestServices_war</output-path>
+    <root id="archive" name="Spring-Hibernate-RestServices.war">
+      <element id="javaee-facet-resources" facet="Spring-Hibernate-RestServices/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring-Hibernate-RestServices" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="project" name="Spring" />
+        </element>
+      </element>
+      <element id="library" level="project" name="Hibernate" />
+      <element id="library" level="project" name="Spring" />
+    </root>
+  </artifact>
+</component>

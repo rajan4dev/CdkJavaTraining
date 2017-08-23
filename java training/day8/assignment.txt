@@ -1,0 +1,22 @@
+1) Write a program which will read a file which contains
+   a) movie name
+   b) actors
+   c) directors
+   d) duration
+
+and display on console properly.
+
+1) Write a program which is holding string data(car names) in a 
+   hashset. This program will save data permanently in a file
+   named as cars.txt before exiting.
+
+2) Write a program which will hold 10-50 employees in an array list.
+   Application will first find those employees who are getting salary
+   more then 40000 per month and then will sort them.
+   And application will save sorted ones in a file before quiting 
+   with full details except their salaries and the will retrieve 
+   them and display the details on console in sorted way only 
+   based on natural sorting decided by eid field. 
+
+    
+

@@ -1,0 +1,2 @@
+set SPRING_LIBS=C:\java-work\demos\day16\libs
+set classpath=%CLASSPATH%;%SPRING_LIBS%\spring-core-4.2.6.RELEASE.jar;%SPRING_LIBS%\spring-beans-4.2.6.RELEASE.jar;%SPRING_LIBS%\spring-context-4.2.6.RELEASE.jar;%SPRING_LIBS%\spring-context-support-4.2.6.RELEASE.jar;%SPRING_LIBS%\spring-expression-4.2.6.RELEASE.jar;%SPRING_LIBS%\com.springsource.org.apache.commons.logging-1.1.1.jar;%SPRING_LIBS%\spring-aop-4.2.6.RELEASE.jar;
